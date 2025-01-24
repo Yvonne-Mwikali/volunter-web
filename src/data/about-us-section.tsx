@@ -1,31 +1,35 @@
 import { FeatureItem } from "@/types";
-import { Activity, Clock, Heart, Shield } from "lucide-react";
+import { BookOpen, Users, Globe, Lightbulb } from "lucide-react";
 
 export const features: FeatureItem[] = [
   {
-    icon: <Shield className="w-8 h-8 text-[#00ffcc]" />,
-    title: "Safety-First Approach",
-    description: "We prioritize safety in all our electrical installations and services.",
+    icon: <BookOpen className="w-8 h-8 text-[#00ffcc]" />,
+    title: "Educational Support",
+    description: "Providing resources and mentorship to enhance learning and self-reliance.",
+    step: 1,
   },
   {
-    icon: <Activity className="w-8 h-8 text-[#00ffcc]" />,
-    title: "Reliable and Efficient",
-    description: "Delivering dependable solutions for all your electrical needs.",
+    icon: <Users className="w-8 h-8 text-[#00ffcc]" />,
+    title: "Youth Empowerment",
+    description: "Engaging youth through skill development and leadership opportunities.",
+    step: 2,
   },
   {
-    icon: <Clock className="w-8 h-8 text-[#00ffcc]" />,
-    title: "Timely Services",
-    description: "Fast response and timely delivery for every project.",
+    icon: <Globe className="w-8 h-8 text-[#00ffcc]" />,
+    title: "Community Development",
+    description: "Building sustainable solutions for a self-reliant and cohesive society.",
+    step: 3,
   },
   {
-    icon: <Heart className="w-8 h-8 text-[#00ffcc]" />,
-    title: "Customer-Centered Care",
-    description: "Your satisfaction is at the heart of everything we do.",
+    icon: <Lightbulb className="w-8 h-8 text-[#00ffcc]" />,
+    title: "Civic Engagement",
+    description: "Promoting awareness and active participation in addressing community challenges.",
+    step: 4,
   },
 ];
 
 export const bulletPoints = [
-  "24/7 Emergency Electrical Assistance",
-  "Committed to providing top-notch electrical solutions",
-  "Understanding your needs to deliver the best services",
+  "Empowering individuals through education and mentorship.",
+  "Encouraging youth to develop skills for socio-economic advancement.",
+  "Driving sustainable initiatives to uplift the entire community.",
 ];
