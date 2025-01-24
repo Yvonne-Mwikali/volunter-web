@@ -1,5 +1,5 @@
-import electrician1 from "@/assets/electrician.jpeg";
-import electrician2 from "@/assets/electrician2.jpeg";
+import community2 from "@/assets/aboutus-women.jpg";
+import community1 from "@/assets/education.jpeg";
 import { bulletPoints, features } from "@/data";
 import { Check } from "lucide-react";
 
@@ -13,7 +13,7 @@ export function AboutSection() {
           <div className="relative h-[500px] rounded-2xl overflow-hidden">
             <div className="absolute -right-8 -bottom-8 w-full h-full bg-[#e6fffa] rounded-2xl" />
             <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden">
-              <img src={electrician2} alt="Electrician at work" className="object-cover" />
+              <img src={community2} alt="Community empowerment activities" className="object-cover h-full" />
             </div>
           </div>
 
@@ -21,20 +21,21 @@ export function AboutSection() {
           <div className="absolute bottom-12 -left-4 w-72 h-48">
             <div className="absolute inset-0 bg-white rounded-2xl shadow-lg" />
             <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden">
-              <img src={electrician1} alt="Electrical inspection" className="object-cover object-fill" />
+              <img src={community1} alt="Educational support initiatives" className="object-cover h-full w-full" />
             </div>
           </div>
         </div>
 
         {/* Content Section */}
         <div className="w-full lg:w-1/2">
-          <span className="text-[#00ffcc] font-medium mb-2 block">About Our Services</span>
+          <span className="text-[#00ffcc] font-medium mb-2 block">About Us</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#1a1a1a] mb-6">
-            Providing Expert Electrical Solutions for Your Home and Business
+            Empowering Communities and Building Sustainable Futures
           </h2>
           <p className="text-gray-600 mb-8">
-            We are dedicated to delivering high-quality electrical services tailored to your specific needs. From
-            installations to maintenance, we ensure safety, reliability, and efficiency in every project.
+            The Empire Educare Centre Community Based Organization (EECCBO) is committed to uplifting communities
+            through education, mentorship, and sustainable development initiatives. We strive to provide resources and
+            opportunities that empower individuals and families to overcome challenges and achieve their full potential.
           </p>
 
           {/* Features Grid */}

@@ -1,4 +1,4 @@
-import electrician2 from "@/assets/electrician2.jpeg";
+import electrician2 from "@/assets/women.jpg";
 import { TestimonialCardProps } from "@/types";
 
 export const testimonialData: TestimonialCardProps[] = [
