@@ -1,34 +1,28 @@
-import { Calendar, Cable, Activity, CreditCard } from "lucide-react";
-import electrician1 from "@/assets/electrician1.jpeg";
-import electrician3 from "@/assets/electrician3.jpeg";
-
-interface Step {
-  icon: JSX.Element;
-  title: string;
-  description: string;
-}
+import { Shield, Users, Briefcase, Globe } from "lucide-react";
+import eccbo1 from "@/assets/community.jpeg";
+import eccbo2 from "@/assets/women.jpg";
 
 export function HowWeWork() {
-  const steps: Step[] = [
+  const steps = [
     {
-      icon: <Calendar className="w-6 h-6" />, // Step 1
-      title: "Schedule a Service",
-      description: "Easily book an appointment at your convenience for any electrical service you need.",
+      icon: <Shield className="w-6 h-6" />,
+      title: "Uphold Our Constitution",
+      description: "We ensure all our activities align with our core values and constitutional guidelines.",
     },
     {
-      icon: <Cable className="w-6 h-6" />, // Step 2
-      title: "Inspection & Assessment",
-      description: "Our skilled electricians will assess your requirements and identify the best solution.",
+      icon: <Users className="w-6 h-6" />,
+      title: "Empower Communities",
+      description: "We work closely with communities to foster unity, development, and inclusivity.",
     },
     {
-      icon: <Activity className="w-6 h-6" />, // Step 3
-      title: "Execute the Work",
-      description: "We ensure high-quality and safe execution of all electrical installations and repairs.",
+      icon: <Briefcase className="w-6 h-6" />,
+      title: "Support Initiatives",
+      description: "We back initiatives and projects that drive sustainable growth and progress.",
     },
     {
-      icon: <CreditCard className="w-6 h-6" />, // Step 4
-      title: "Finalize & Payment",
-      description: "Once satisfied, complete the process with secure and transparent payment options.",
+      icon: <Globe className="w-6 h-6" />,
+      title: "Promote Global Collaboration",
+      description: "We engage with global partners to expand opportunities and resources for our members.",
     },
   ];
 
@@ -39,11 +33,11 @@ export function HowWeWork() {
         <div>
           <span className="text-[#00ffcc] font-medium mb-2 block">How We Work</span>
           <h2 className="text-3xl lg:text-4xl font-bold text-[#1a1a1a] mb-8">
-            Streamlined Electrical Services for Your Home and Business
+            Guided by the ECCBO Constitution, We Build a Better Future Together
           </h2>
           <p className="text-gray-600 mb-12">
-            From scheduling to final delivery, we make the entire process simple and efficient, ensuring your
-            satisfaction at every step.
+            With a focus on community empowerment, transparency, and collaboration, ECCBO ensures every step is
+            impactful.
           </p>
 
           {/* Timeline */}
@@ -75,12 +69,12 @@ export function HowWeWork() {
 
           {/* Main image */}
           <div className="absolute right-0 top-0 w-4/5 h-4/5 rounded-lg overflow-hidden">
-            <img src={electrician1} alt="Electrician at work" className="object-cover" />
+            <img src={eccbo1} alt="ECCBO community at work" className="h-full object-fill" />
           </div>
 
           {/* Secondary image */}
           <div className="absolute left-0 bottom-0 w-2/3 h-1/2 rounded-lg overflow-hidden shadow-xl">
-            <img src={electrician3} alt="Team discussion for electrical planning" className="object-cover" />
+            <img src={eccbo2} alt="ECCBO initiative planning" className="object-cover h-full" />
           </div>
         </div>
       </div>

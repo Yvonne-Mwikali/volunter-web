@@ -15,7 +15,7 @@ export function HeroSection() {
   return (
     <div className="relative w-full min-h-screen bg-white">
       {/* Background shape */}
-      <div className="absolute top-0 left-0 w-full md:w-[50%] h-full bg-[#0a0f37] clip-path-polygon" />
+      <div className="absolute top-0 left-0 w-full md:w-[50%] h-full bg-[#0a0f37]" />
 
       {/* Main container */}
       <div className="container relative">
@@ -37,14 +37,19 @@ export function HeroSection() {
                 access to education, skill development, and community support initiatives.
               </p>
               <button className="bg-[#0a0f37] text-white px-8 py-3 rounded-full hover:bg-[#161d4e] transition-colors">
-                Learn More
+                Join Our Program
               </button>
             </div>
           </div>
 
           {/* Image Section */}
-          <div className="relative w-full md:w-1/2 h-[400px] md:h-auto">
-            <div className="absolute inset-0">
+          <div className="relative w-full md:w-1/2 h-[400px] bg-[#0a0f37] md:h-auto">
+            <div
+              style={{
+                clipPath: "polygon(27% 0, 100% 0, 100% 100%, 0 100%)", // Adjusted polygon
+              }}
+              className="absolute inset-0 overflow-hidden"
+            >
               {images.map((image, index) => (
                 <div
                   key={index}
@@ -57,11 +62,6 @@ export function HeroSection() {
                     alt={image.alt}
                     className="object-cover w-full h-full rounded-lg"
                     loading={index === 0 ? "eager" : "lazy"}
-                    style={{
-                      objectFit: "contain",
-                      width: "100%",
-                      height: "100%",
-                    }}
                   />
                 </div>
               ))}
