@@ -1,5 +1,5 @@
-export * from "./about-service-cards";
+export * from "./programs-initiative-cards";
 export * from "./footer";
 export * from "./header";
-export * from "./service-carousel";
+export * from "./programs-carousel";
 export * from "./testimonial-card";
