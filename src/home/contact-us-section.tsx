@@ -4,7 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Calendar } from "lucide-react";
-import electricalCables from "@/assets/electrical-cables.jpg";
+import water from "@/assets/water.jpeg";
 
 export function ContactPage() {
   return (
@@ -15,11 +15,7 @@ export function ContactPage() {
             {/* Left Section with Image Overlay */}
             <div className="relative">
               <div className="absolute inset-0 bg-teal-500/90 z-10" />
-              <img
-                src={electricalCables}
-                alt="Electrician Team"
-                className="w-full h-full object-cover absolute inset-0"
-              />
+              <img src={water} alt="Electrician Team" className="w-full h-full object-cover absolute inset-0" />
               <div className="relative z-20 p-8 flex flex-col items-center justify-center min-h-[400px] text-center text-white">
                 <Calendar className="w-12 h-12 mb-6" />
                 <h2 className="text-3xl font-bold mb-4">Schedule Your Electrical Service Today</h2>

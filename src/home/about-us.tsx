@@ -1,10 +1,10 @@
-import { AboutServiceCards } from "@/components/about-service-cards";
+import { ProgramsAndInitiatives } from "@/components/programs-initiative-cards";
 import { AboutSection } from "./about-us-section";
 
 export function AboutUs() {
   return (
     <>
-      <AboutServiceCards />
+      <ProgramsAndInitiatives />
       <AboutSection />
     </>
   );
