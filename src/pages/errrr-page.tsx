@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import { Lightbulb, Home, Wrench, Key } from "lucide-react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 interface ErrorPageProps {
   error?: string;
@@ -9,7 +10,7 @@ interface ErrorPageProps {
 }
 
 export function ErrorPage({ error, reset }: ErrorPageProps) {
-  const router = useRouter();
+  const router = useNavigate();
 
   // Ensure we have a default error message
   const displayError = error || "The page you're looking for seems to have wandered off to another property.";
@@ -79,7 +80,7 @@ export function ErrorPage({ error, reset }: ErrorPageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.5 }}
         >
-          <Button variant="default" onClick={() => router.push("/")} className="flex items-center gap-2">
+          <Button variant="default" onClick={() => router("/")} className="flex items-center gap-2">
             <Home className="w-4 h-4" />
             Return Home
           </Button>
