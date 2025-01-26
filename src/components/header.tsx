@@ -10,7 +10,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-16 items-center mx-auto">
         <div className="mr-4 flex items-center md:hidden">
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -41,11 +41,11 @@ export function Header() {
         </div>
 
         <NavHashLink to="/" className="mr-6 flex items-center space-x-2">
-          <span className="text-xl font-bold">ElectricalLife</span>
+          <span className="text-xl font-bold">ECCBO</span>
         </NavHashLink>
 
         <nav className="hidden md:flex md:flex-1 md:items-center md:justify-between">
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-6 mx-auto">
             {navigation.map((item) => (
               <NavHashLink
                 key={item.name}
