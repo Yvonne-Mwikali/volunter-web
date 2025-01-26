@@ -33,14 +33,11 @@ export function ProgramsAndInitiatives() {
             {/* Step Label */}
             <div className="absolute -bottom-4 left-0">
               <div className="bg-[#00ffcc] text-white px-6 py-2 clip-path-arrow">
-                <span className="relative z-10">Step {program.step.toString().padStart(2, "0")}</span>
+                <span className="relative z-10"> {program.step.toString().padStart(2, "0")}</span>
               </div>
             </div>
 
             {/* Read More Text */}
-            <p className="text-[#00ffcc] text-sm mt-8 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              Read More
-            </p>
           </div>
         ))}
       </div>
