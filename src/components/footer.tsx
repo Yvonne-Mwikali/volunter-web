@@ -8,7 +8,7 @@ export function Footer() {
         {/* Organization Info */}
         <div className="space-y-4">
           <NavHashLink to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold">ECCBO</span>
+            <span className="text-2xl font-bold">EECCBO</span>
           </NavHashLink>
           <p className="text-gray-400 text-sm">
             Empowering Communities for Change in Bungoma County. We strive to foster development, inclusivity, and
