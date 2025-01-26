@@ -2,6 +2,7 @@ import community2 from "@/assets/aboutus-women.jpg";
 import community1 from "@/assets/education.jpeg";
 import { bulletPoints, features } from "@/data";
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function AboutSection() {
   return (
@@ -64,9 +65,11 @@ export function AboutSection() {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-[#00ffcc] text-white px-8 py-3 rounded-lg hover:bg-[#00e6b8] transition-colors">
-            Learn More About Us
-          </button>
+          <Link to="/about">
+            <button className="bg-[#00ffcc] text-white px-8 py-3 rounded-lg hover:bg-[#00e6b8] transition-colors">
+              Learn More About Us
+            </button>
+          </Link>
         </div>
       </div>
     </div>
