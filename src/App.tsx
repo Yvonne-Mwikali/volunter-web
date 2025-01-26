@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { RootLayout } from "./pages/layout";
 import { MainHomePages } from "./pages/main";
 import NotFound from "./pages/not-found";
+import { AboutDetailPage } from "./home/about-detail-page";
 
 function App() {
   const router = createBrowserRouter([
@@ -14,6 +15,10 @@ function App() {
         {
           path: "/",
           element: <MainHomePages />,
+        },
+        {
+          path: "/about",
+          element: <AboutDetailPage />,
         },
       ],
     },
