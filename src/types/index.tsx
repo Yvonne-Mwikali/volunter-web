@@ -24,6 +24,7 @@ export interface FeatureItem {
   step: number;
 }
 export interface Programs {
+  id: string;
   title: string;
   description: string;
   image: string;
