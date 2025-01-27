@@ -4,7 +4,7 @@ import { Share2 } from "lucide-react";
 
 function TeamMemberCard({ member }: { member: TeamMember }) {
   return (
-    <motion.div className="relative group" whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
+    <motion.div id="team" className="relative group" whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
       <div className="relative w-full aspect-square rounded-full overflow-hidden mb-4 shadow-lg">
         <img src={member.image || "/placeholder.svg"} alt={member.name} className="w-full h-full object-cover" />
         <button className="absolute top-4 right-10 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition-colors">
