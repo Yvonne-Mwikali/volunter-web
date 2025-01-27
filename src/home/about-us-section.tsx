@@ -9,21 +9,18 @@ export function AboutSection() {
     <div className="container px-16 py-16">
       <div className="flex flex-col lg:flex-row gap-12">
         {/* Image Section */}
-        <div className="relative w-full lg:w-1/2">
-          {/* Main image with blue shadow */}
-          <div className="relative h-[500px] rounded-2xl overflow-hidden">
-            <div className="absolute -right-8 -bottom-8 w-full h-full bg-[#e6fffa] rounded-2xl" />
-            <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden">
-              <img src={community2} alt="Community empowerment activities" className="object-cover h-full" />
-            </div>
+        <div className="relative h-[400px] lg:h-[500px] w-full lg:w-1/2">
+          {/* Background accent */}
+          {/* <div className="absolute right-0 top-0 w-4/5 md:h-4/5 bg-[#e6fffa] rounded-lg" /> */}
+
+          {/* Main image */}
+          <div className="absolute -right-8 h-3/4 top-0  md:w-4/5 md:h-4/5 rounded-lg overflow-hidden">
+            <img src={community2} alt="ECCBO community at work" className="h-full object-cover" />
           </div>
 
-          {/* Smaller image with white border */}
-          <div className="absolute bottom-12 -left-4 w-72 h-48">
-            <div className="absolute inset-0 bg-white rounded-2xl shadow-lg" />
-            <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden">
-              <img src={community1} alt="Educational support initiatives" className="object-cover h-full w-full" />
-            </div>
+          {/* Secondary image w-5/6 */}
+          <div className="absolute -left-8 bottom-0  h-1/2 rounded-lg overflow-hidden shadow-xl ">
+            <img src={community1} alt="ECCBO initiative planning" className="object-cover h-full" />
           </div>
         </div>
 

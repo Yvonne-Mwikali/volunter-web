@@ -79,7 +79,7 @@ export function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white w-full">
+    <div id="contact" className="min-h-screen bg-gradient-to-b from-blue-50 to-white w-full">
       <div className="container mx-auto px-4 py-12">
         <div className="rounded-lg overflow-hidden bg-white shadow-xl">
           <div className="grid md:grid-cols-2">
