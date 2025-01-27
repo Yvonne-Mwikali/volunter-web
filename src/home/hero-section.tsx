@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 
 export function HeroSection() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const isMediumOrLargeDevice = window.innerWidth >= 768; // Adjust breakpoint as needed
+
+  const style = isMediumOrLargeDevice ? { clipPath: "polygon(27% 0, 100% 0, 100% 100%, 0 100%)" } : {};
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -44,12 +47,7 @@ export function HeroSection() {
 
           {/* Image Section */}
           <div className="relative w-full md:w-1/2 h-[400px] bg-[#0a0f37] md:h-auto">
-            <div
-              style={{
-                clipPath: "polygon(27% 0, 100% 0, 100% 100%, 0 100%)", // Adjusted polygon
-              }}
-              className="absolute inset-0 overflow-hidden"
-            >
+            <div style={style} className="absolute inset-0 overflow-hidden">
               {images.map((image, index) => (
                 <div
                   key={index}
