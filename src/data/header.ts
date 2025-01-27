@@ -1,9 +1,16 @@
-export const navigation = [
-  { name: "Home", to: "/" },
-  { name: "About Us", to: "/about" },
-  { name: "Services", to: "/services" },
-  { name: "Our Team", to: "/team" },
-  { name: "How We Work", to: "/process" },
-  { name: "Testimonials", to: "/testimonials" },
-  { name: "Contact Us", to: "/contact" },
+export enum NavItems {
+  Home = "/",
+  OurTem = "team",
+  HowWeWork = "process",
+  OurPrograms = "programs",
+  ContactUs = "contact",
+  AboutUs = "/about",
+}
+export const navigation: { name: string; to: NavItems }[] = [
+  { name: "Home", to: NavItems.Home },
+  { name: "About Us", to: NavItems.AboutUs },
+  { name: "Our Team", to: NavItems.OurTem },
+  { name: "How We Work", to: NavItems.HowWeWork },
+  { name: "Our Programs", to: NavItems.OurPrograms },
+  { name: "Contact Us", to: NavItems.ContactUs },
 ];
