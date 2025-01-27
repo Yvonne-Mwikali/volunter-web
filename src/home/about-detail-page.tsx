@@ -10,7 +10,7 @@ export function AboutDetailPage() {
     <div className="min-h-screen bg-[#0a0f37] text-white">
       {/* Background and History Section */}
       <section className="container px-4 py-16 md:py-24 grid md:grid-cols-2 gap-8 items-center">
-        <div>
+        <div className="order-last ">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-[#00ffcc]">Background and History</h1>
           <p className="text-white leading-relaxed">
             Established to address gaps in education and empowerment in Homabay and Migori counties, EECCBO emerged as a
@@ -21,7 +21,7 @@ export function AboutDetailPage() {
             EECCBO operates in Homabay and Migori counties, with the potential for future expansion as necessary.
           </p>
         </div>
-        <div className="relative h-[400px] rounded-tr-[100px] overflow-hidden">
+        <div className="relative h-[400px] rounded-tr-[100px] overflow-hidden order-start">
           <img
             src={community2 || "/placeholder.svg"}
             alt="People working together"
@@ -100,7 +100,7 @@ export function AboutDetailPage() {
               </div>
             </div>
           </section>
-          <div className="relative">
+          <div className="relative order-first">
             <div className="relative h-[500px] overflow-hidden">
               <div className="absolute inset-0 bg-[#00ffcc]/10 z-10 rounded-tl-[100px]" />
               <img
