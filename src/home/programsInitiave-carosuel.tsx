@@ -67,7 +67,7 @@ export function ProgramsInitiativeCarouselPage() {
   const handleMouseLeave = () => setIsAutoScrolling(true);
 
   return (
-    <div id="testimonials" className="min-h-screen relative bg-gradient-to-br bg-[#00ffcc]/30 overflow-hidden">
+    <div id="programs" className="min-h-screen relative bg-gradient-to-br bg-[#00ffcc]/30 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         {/* Heading and Subheading */}
         <div className="text-center mb-20 relative z-10">

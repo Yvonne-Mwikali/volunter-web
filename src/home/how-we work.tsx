@@ -27,7 +27,7 @@ export function HowWeWork() {
   ];
 
   return (
-    <div className="container px-4 py-16">
+    <div id="process" className="container px-4 py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Content Section */}
         <div>
@@ -63,17 +63,17 @@ export function HowWeWork() {
         </div>
 
         {/* Image Section */}
-        <div className="relative h-[600px]">
+        <div className="relative h-[600px] order-first">
           {/* Background accent */}
-          <div className="absolute right-0 top-0 w-4/5 h-4/5 bg-[#e6fffa] rounded-lg" />
+          <div className="absolute right-0 top-0 w-4/5 md:h-4/5 bg-[#e6fffa] rounded-lg" />
 
           {/* Main image */}
-          <div className="absolute right-0 top-0 w-4/5 h-4/5 rounded-lg overflow-hidden">
-            <img src={eccbo1} alt="ECCBO community at work" className="h-full object-fill" />
+          <div className="absolute right-0 h-3/4 top-0 w-5/6 md:w-4/5 md:h-4/5 rounded-lg overflow-hidden">
+            <img src={eccbo1} alt="ECCBO community at work" className="h-full object-cover" />
           </div>
 
           {/* Secondary image */}
-          <div className="absolute left-0 bottom-0 w-2/3 h-1/2 rounded-lg overflow-hidden shadow-xl">
+          <div className="absolute left-0 bottom-0 w-2/3 h-1/2 rounded-lg overflow-hidden shadow-xl ">
             <img src={eccbo2} alt="ECCBO initiative planning" className="object-cover h-full" />
           </div>
         </div>
