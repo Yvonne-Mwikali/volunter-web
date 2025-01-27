@@ -17,7 +17,7 @@ function App() {
           element: <MainHomePages />,
         },
         {
-          path: "/about",
+          path: "about",
           element: <AboutDetailPage />,
         },
       ],
