@@ -11,7 +11,6 @@ export function AboutSection() {
         {/* Image Section */}
         <div className="relative h-[400px] lg:h-[500px] w-full lg:w-1/2">
           {/* Background accent */}
-          {/* <div className="absolute right-0 top-0 w-4/5 md:h-4/5 bg-[#e6fffa] rounded-lg" /> */}
 
           {/* Main image */}
           <div className="absolute -right-8 h-3/4 top-0  md:w-4/5 md:h-4/5 rounded-lg overflow-hidden">
